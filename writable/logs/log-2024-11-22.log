@@ -1,0 +1,87 @@
+INFO - 2024-11-22 17:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:12:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:12:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-22 17:14:56 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Categorias/edit/%2012]
+in APPPATH\Views\Categoria\_form.php on line 2.
+ 1 APPPATH\Views\Categoria\_form.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\_form.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\_form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/_form', [], true)
+ 5 APPPATH\Views\Categoria\edit.php(13): view('Categoria/_form', [...])
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\edit.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/edit', [], true)
+ 9 APPPATH\Controllers\Categorias.php(23): view('Categoria/edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->edit(' 12')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-22 17:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 17:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-22 17:35:00 --> ErrorException: Undefined variable $categoria
+[Method: GET, Route: Categorias/new]
+in APPPATH\Views\Categoria\_form.php on line 2.
+ 1 APPPATH\Views\Categoria\_form.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\_form.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\_form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/_form', [], true)
+ 5 APPPATH\Views\Categoria\new.php(11): view('Categoria/_form', [...])
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\new.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/new', [], true)
+ 9 APPPATH\Controllers\Categorias.php(69): view('Categoria/new')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->new()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-22 17:47:40 --> ErrorException: Undefined variable $categoria
+[Method: GET, Route: Categorias/new]
+in APPPATH\Views\Categoria\_form.php on line 2.
+ 1 APPPATH\Views\Categoria\_form.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoria', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\_form.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\_form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/_form', [], true)
+ 5 APPPATH\Views\Categoria\new.php(11): view('Categoria/_form', [...])
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\new.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/new', [], true)
+ 9 APPPATH\Controllers\Categorias.php(71): view('Categoria/new', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->new()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-22 18:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-22 18:03:41 --> ErrorException: Undefined variable $libros
+[Method: GET, Route: Libros/edit/%201]
+in APPPATH\Views\Libro\_form.php on line 2.
+ 1 APPPATH\Views\Libro\_form.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $libros', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Libro\\_form.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Libro\\_form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Libro/_form', [], true)
+ 5 APPPATH\Views\Libro\edit.php(13): view('Libro/_form', [...])
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Libro\\edit.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Libro/edit', [], true)
+ 9 APPPATH\Controllers\Libros.php(27): view('Libro/edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Libros->edit(' 1')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-22 18:04:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-22 18:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

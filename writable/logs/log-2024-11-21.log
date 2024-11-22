@@ -1,0 +1,180 @@
+CRITICAL - 2024-11-21 17:40:38 --> Error: Call to undefined function App\Controllers\newLibroModel()
+[Method: GET, Route: Libros/show/%201]
+in APPPATH\Controllers\Libros.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Libros->show(' 1')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:07:53 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\CategoriaModel"
+[Method: POST, Route: Categorias/create]
+in SYSTEMPATH\Model.php on line 824.
+ 1 SYSTEMPATH\Model.php(824): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\CategoriaModel')
+ 2 SYSTEMPATH\BaseModel.php(821): CodeIgniter\Model->doProtectFieldsForInsert([...])
+ 3 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\Categorias.php(49): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->create()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:08:39 --> ErrorException: Undefined variable $libro
+[Method: GET, Route: Categorias/show/%201]
+in APPPATH\Views\Categoria\show.php on line 6.
+ 1 APPPATH\Views\Categoria\show.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $libro', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/show', [], true)
+ 5 APPPATH\Controllers\Categorias.php(35): view('Categoria/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->show(' 1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:26:14 --> ErrorException: Undefined variable $categorias
+[Method: GET, Route: Categorias/edit/%201]
+in APPPATH\Views\Categoria\edit.php on line 11.
+ 1 APPPATH\Views\Categoria\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categorias', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/edit', [], true)
+ 5 APPPATH\Controllers\Categorias.php(23): view('Categoria/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->edit(' 1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:55:48 --> ErrorException: Undefined variable $c
+[Method: GET, Route: Categorias]
+in APPPATH\Views\Categoria.php on line 27.
+ 1 APPPATH\Views\Categoria.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria', [], true)
+ 5 APPPATH\Controllers\Categorias.php(15): view('Categoria', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:55:51 --> ErrorException: Undefined variable $c
+[Method: GET, Route: Categorias]
+in APPPATH\Views\Categoria.php on line 27.
+ 1 APPPATH\Views\Categoria.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria.php', 27)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria', [], true)
+ 5 APPPATH\Controllers\Categorias.php(15): view('Categoria', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:56:26 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: Categorias/delete/%202]
+in APPPATH\Views\Categoria\show.php on line 6.
+ 1 APPPATH\Views\Categoria\show.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/show', [], true)
+ 5 APPPATH\Controllers\Categorias.php(58): view('Categoria/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->show('delete', ' 2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 18:57:54 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: Categorias/delete/2]
+in APPPATH\Views\Categoria\show.php on line 6.
+ 1 APPPATH\Views\Categoria\show.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/show', [], true)
+ 5 APPPATH\Controllers\Categorias.php(58): view('Categoria/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->show('delete', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 19:00:03 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: Categorias/delete/2]
+in APPPATH\Views\Categoria\show.php on line 6.
+ 1 APPPATH\Views\Categoria\show.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Categoria\\show.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Categoria/show', [], true)
+ 5 APPPATH\Controllers\Categorias.php(58): view('Categoria/show', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->show('delete', '2')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 19:09:35 --> ErrorException: Undefined variable $c
+[Method: GET, Route: Libros]
+in APPPATH\Views\Libreria.php on line 30.
+ 1 APPPATH\Views\Libreria.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $c', 'C:\\laragon\\www\\biblioteca\\app\\Views\\Libreria.php', 30)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\biblioteca\\app\\Views\\Libreria.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Libreria', [], true)
+ 5 APPPATH\Controllers\Libros.php(19): view('Libreria', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Libros->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 19:11:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Libros/edit.php"
+[Method: GET, Route: Libros/edit/%202]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Libros/edit.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Libros/edit', [], true)
+ 3 APPPATH\Controllers\Libros.php(27): view('Libros/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Libros->edit(' 2')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Libros))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-21 19:27:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-21 19:29:53 --> Error: Undefined constant "App\Controllers\redirect"
+[Method: POST, Route: Categorias/create]
+in APPPATH\Controllers\Categorias.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->create()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 19:30:24 --> Error: Undefined constant "App\Controllers\redirect"
+[Method: POST, Route: Categorias/create]
+in APPPATH\Controllers\Categorias.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->create()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-11-21 19:30:48 --> Error: Undefined constant "App\Controllers\redirect"
+[Method: POST, Route: Categorias/create]
+in APPPATH\Controllers\Categorias.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Categorias->create()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Categorias))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-11-21 19:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-21 19:37:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-21 19:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-21 19:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-21 19:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-21 19:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
