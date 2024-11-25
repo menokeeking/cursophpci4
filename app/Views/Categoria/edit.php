@@ -1,14 +1,15 @@
 <?= $this->extend('layout/layout') ?>
 <?= $this->section('header') ?>
-  Editar
+editar
 <?= $this->endSection('header') ?>
-    
+
+
 <?= $this->section('contenido') ?>
-<?= view('partials/form_error') ?>
-<form method ="POST" action= "../update/<?=$categoria['id'] ?>">
-    <!-- <label for="titulo"> Editar Categoria</label>
-    <input type="text" name="titulo" id="titulo" value="<?= $categoria['titulo']?>"/>
-    <input type="submit" value="Enviar"> -->
-    <?= view('Categoria/_form', ['op'=> 'Actualizar'])?>
+
+<?= view('partials/form_error')?>
+
+    <form method="POST" action="../update/<?= $categorias['id']?>">
+    <?= view('Categoria/_form',['op'=> 'Atualizar'])?>
 </form>
+
 <?= $this->endSection('contenido') ?>

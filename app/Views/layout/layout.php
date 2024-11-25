@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title>ADMIN</title>
 </head>
 <body>
-    <h1><?= $this->renderSection('header') ?> </h1>
+    <h1><?= $this->renderSection('header')?></h1>
 
-    <?= view('partials/session') ?>
+    <?=  view('partials/session')?>
 
 
-    <?= $this->renderSection('contenido') ?>
+    <?= $this->renderSection('contenido')?>
 </body>
 </html>

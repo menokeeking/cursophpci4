@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
-use App\Models\CategoriaModel;
+use App\models\CategoriaModel;
 
 class Categorias extends BaseController
 {
@@ -12,89 +12,88 @@ class Categorias extends BaseController
     {
         $categoriaModel = new CategoriaModel();
         echo view('Categoria', [
-                'categoria' => $categoriaModel->findAll()
+            'categorias' => $categoriaModel->findAll()
         ]);
     }
 
     public function edit($id)
     {
         $categoriaModel = new CategoriaModel();
-        echo view('Categoria/edit', [
-            'categoria' => $categoriaModel-> find($id)
+
+        echo view('categoria/edit', [
+            'categorias' => $categoriaModel->find($id)
         ]);
     }
 
-    public function update($id){
+    public function update($id)
+    {
         $categoriaModel = new CategoriaModel();
-        if($this->validate('categorias')){
-            $categoriaModel->update($id,[
+        if ($this->validate('categorias')) {
+            $categoriaModel->update($id, [
                 'titulo' => $this->request->getPost('titulo'),
             ]);
-        }else{
+
+            //echo 'actualizado';
+        } else {
             session()->setFlashData([
                 'validation' => $this->validator
             ]);
-            return redirect()-> back();
+            
         }
-        return redirect()-> back()->with('mensaje','Registro actualizado');
+        return redirect()->back();
+
     }
 
-    public function remove()
-    {
-        
-    }
-    
     public function delete($id)
     {
         $categoriaModel = new CategoriaModel();
-
-        $categoriaModel -> delete($id);
-
-        /* echo 'Categoria Eliminada'; */
-        /* return redirect()->to('Categorias'); */
-        return redirect()-> back()->with('mensaje','Registro eliminado');;
+        $categoriaModel->delete($id);
+        return redirect()->back()->with('mensaje',  'registro eliminado');
     }
-
 
     public function show($id)
     {
-        //echo view('Categoria/new');
         $categoriaModel = new CategoriaModel();
 
-        echo view('Categoria/show', [
-            'categoria' => $categoriaModel-> find($id)
+        //  var_dump($categoriaModel->find($id));
+        echo view('categoria/show', [
+            'categorias' => $categoriaModel->find($id)
         ]);
     }
 
     public function new()
     {
-       
         echo view('Categoria/new', [
-            'categoria' => [
+            'categorias' => [
                 'titulo' => ''
             ]
         ]);
-
     }
 
-    public function create(){
 
 
+    public function create()
+    {
         $categoriaModel = new CategoriaModel();
 
-        if($this->validate('categorias')){
-
-            $categoriaModel -> insert([
-                'titulo' => $this->request->getPost('titulo')
+        if ($this->validate('categorias')) {
+            $categoriaModel->insert([
+                'titulo' => $this->request->getPost('titulo'),
             ]);
 
+        } else {
+            session()->setFlashdata([
 
-        }else{
-            session()->setFlashData([
-                'validation' => $this->validator
+                'validation'=>$this->validator
+                
             ]);
-            return redirect()-> back();
+            return redirect()->back()->withInput();
         }
-        return redirect()->to('Categorias')->with('mensaje', 'Registro Creado');
+        return redirect()->to('Categorias')->with('mensaje', 'Registro creado');
+
     }
 }
+
+
+//crear controlador 
+//php spark make:controller Libros

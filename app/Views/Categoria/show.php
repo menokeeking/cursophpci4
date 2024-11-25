@@ -1,8 +1,11 @@
 <?= $this->extend('layout/layout') ?>
 <?= $this->section('header') ?>
-Mostrar 
+mostrar
 <?= $this->endSection('header') ?>
-    
+
+
 <?= $this->section('contenido') ?>
-    <h1>Titulo: <?= $categoria['titulo']?></h1>
+    
+<h1><?= $categorias['titulo']?></h1>
+
 <?= $this->endSection('contenido') ?>
